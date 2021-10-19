@@ -1,0 +1,16 @@
+.menu a {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px 10px;
+    color: rgb(112, 67, 34);
+}
+.logout{
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: burlywood;
+    border: 0px;
+}
+.menu a:hover{
+    background-color: burlywood;
+    color: rgb(112, 67, 34);
+}

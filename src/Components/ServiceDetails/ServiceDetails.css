@@ -1,0 +1,11 @@
+.single-img{
+    width: 60%;
+    height: 50%;
+}
+.get-appointment a{
+    text-decoration: none;
+    background-color: burlywood;
+    color: rgb(112, 67, 34);
+    padding: 10px 20px;
+
+}

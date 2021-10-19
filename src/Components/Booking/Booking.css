@@ -1,0 +1,21 @@
+.booking input{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 0px;
+    margin: 10px;
+    width: 75%;
+}
+.booking textarea{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 0px;
+    margin: 10px;
+    width: 75%;
+}
+.booking a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: rgb(116, 99, 77);
+    background-color: burlywood;
+    border: 0px;
+    width: 100px;
+    margin: auto;
+}

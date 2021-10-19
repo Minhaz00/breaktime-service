@@ -1,0 +1,22 @@
+.notfound h1{
+    color: rgb(99, 64, 39);
+    font-size: 1500%;
+}
+.notfound{
+    background-color: burlywood;
+}
+.notfound button{
+    background-color:burlywood;
+    border: 2px solid rgb(99, 64, 39);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+    .notfound h1{
+        font-size: 400%;
+    }
+    .notfound{
+        width: 100%;
+    }
+}

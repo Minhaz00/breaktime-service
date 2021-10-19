@@ -1,0 +1,9 @@
+.person img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.person{
+    box-shadow: 5px 5px 10px whitesmoke;
+}

@@ -1,0 +1,13 @@
+.log-in{
+    text-decoration: none;
+    color: rgb(116, 99, 77);
+    background-color: burlywood;
+    border: 0px;
+    width: 200px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+.toggle{
+    margin-left: auto;
+    
+}

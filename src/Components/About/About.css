@@ -1,0 +1,24 @@
+.about-counter{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.about-counter div{
+    border: 2px solid gray;
+    padding: 10px;
+}
+.mission{
+    text-align: justify;
+}
+
+.therapists{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+@media screen and (max-width:480px) {
+    .therapists{
+        display: grid ;
+        grid-template-columns: repeat(1,1fr) ; 
+    }
+}

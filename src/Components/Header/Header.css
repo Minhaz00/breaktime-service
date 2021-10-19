@@ -1,0 +1,15 @@
+.carousel img {
+    height: 600px ;
+}
+
+.carousel-container h1{
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.carousel-container p{
+    color:rgba(243, 243, 243, 0.863);
+    text-align: left;
+}
+
+

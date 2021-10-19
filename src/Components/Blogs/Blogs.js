@@ -1,0 +1,60 @@
+import React from 'react';
+import { useEffect, useState } from 'react';
+import Blog from '../Blog/Blog';
+const Blogs = () => {
+    const [blogs, setBlogs] = useState([]);
+    useEffect(() => {
+        fetch("./blogs.json")
+            .then(res => res.json())
+            .then(data => setBlogs(data));
+    },[])
+    return (
+        <div>
+            <h1 className='my-lg-5'>Blogs</h1>
+            <div className='container'>
+                {
+                    blogs.map(blog => <Blog
+                        key={blogs.id}
+                        blog = {blog}
+                    ></Blog>)
+                }
+            </div>
+        </div>
+    );
+};
+
+export default Blogs;
+
+// const blogs = [
+//     {
+//         id: 1,
+//         url: 'https://cdn.shopify.com/s/files/1/0860/7364/t/17/assets/pf-79ab14ed--EMOTIONAL-WELLNESS-18.jpg?v=1615944394',
+//         title : 'It’s Emotional Wellness Month',
+//         description: "It's Emotional Wellness Month!We have four ways to support your own emotional wellness this October and beyond! The Elements Massage brand believes that monthly massages make everything better for your body, mind, and spirit.Thats why were so excited that October is Emotional Wellness Month."
+//     },
+//     {
+//         id: 2,
+//         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvGdLhInayWFsGv6ICLxCRO7faTIp_ZeTKXkJbaFecVY9YY_sWtblY5BdbH1Bk6gPMOvI&usqp=CAU',
+//         title : 'Healthy Habits You Can Add (Easily!) to Your Routine',
+//         description: "It’s fall! A time when kids go back to school and many of us feel a pull to revisit, refine or return to a daily, weekly or monthly routine! In recent years, the power of routine has gotten lots of attention. Routines allow you to make fewer decisions (and detours!) every day and therefore have more energy to devote to the things that help make you happier, healthier and/or more productive."
+//     },
+//     {
+//         id: 3,
+//         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtS2MD0PVF7RAAZrVLEmZuMMokvzgzlckj7g&usqp=CAU',
+//         title : 'Shankara Skin Care + Elements Massage',
+//         description: "The collaboration that made the Elements Massage® AromaRitual® service enhancement possible! When you make a great friend, the first thing you want to do is introduce them to everyone you know! That’s how we feel about Shankara Skin Care (“Shankara”), the 2017 iSPA Innovate Award winner."
+//     },
+//     {
+//         id: 4,
+//         url: 'https://cdn.shopify.com/s/files/1/0860/7364/t/17/assets/pf-79ab14ed--EMOTIONAL-WELLNESS-18.jpg?v=1615944394',
+//         title : 'Sun’s out! Fun’s out!',
+//         description: "Summer is here and so are a million and one fun ways to care for your body, mind, and spirit. With kids home from school, travel, get-togethers, and the like, summer days fill up fast, so if you want to get the most out of your summer, it’s good to have a little bit of a plan."
+//     },
+//     {
+//         id: 5,
+//         url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_8PKtnOLJNPJcyA7zH0R-tXG-BVzymwfJg&usqp=CAU',
+//         title : 'Emotional Wellness and What It Means For You',
+//         description: "October is Emotional Wellness Month, and a great opportunity to take a deeper look into what Emotional Wellness is, and what it can mean for you and your overall health. According to the National Center for Emotional Wellness, emotional wellness is “an awareness, understanding and acceptance of our feelings, and our ability to manage effectively through challenges"
+//     }
+    
+// ]
